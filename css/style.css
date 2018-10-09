@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Diplomata');
+/*
+color scheme:
+black: #020e11;
+rgb(2, 14, 17);
+red: #941c2f;
+rgb(148, 28, 47);
+blue: #59f8e8;
+rgb(89, 248, 232);
+light-blue: #adddfa;
+rgb(173, 221, 250);
+light-grey: #f9fafb;
+rgb(249, 250, 251);
+*/
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+}
+/*nav*/
+nav {
+  transition: all 1.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+nav:hover {
+  background: rgba(173, 221, 250, .7);
+}
+
+nav:hover .navbar-brand {
+  color: #020e11!important;
+}
+
+nav:hover a.nav-link {
+  color: #020e11!important;
+}
+
+nav .navbar-brand {
+  font-family: 'Diplomata', cursive;
+  color: #59f8e8!important;
+  text-shadow: 3px 3px 15px #941c2f;
+  transition: all 2s ease;
+}
+
+nav button.navbar-toggler {
+  background: #941c2f;
+  transition: all 1.2s ease;
+  animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+nav button.navbar-toggler:hover,
+nav button.navbar-toggler:focus {
+  background: #020e11;
+  border: 1px solid #59f8e8;
+}
+
+nav a.nav-link {
+  color: #f9fafb!important;
+  font-size: 1.1em!important;
+  text-shadow: 3px 3px 7px #f9fafb;
+  transition: all 2s ease;
+}
+
+nav a.nav-link:hover {
+  color: #59f8e8!important;
+  background: rgba(148, 28, 47, .8);
+  text-shadow: 3px 3px 15px #020e11;
+}
+
+nav .dropdown-menu {
+  background: rgba(148, 28, 47, .8)!important;
+}
+
+nav .dropdown-item {
+  color: #f9fafb!important;
+  font-size: 1em!important;
+  text-shadow: 3px 3px 7px #f9fafb;
+}
+
+nav .dropdown-item:hover {
+  color: #020e11!important;
+  background: transparent;
+}
+/*header*/
+#banner {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(173, 221, 250,.05),rgba(173, 221, 250,.4)),
+  url(../img/bg-header.jpeg) center/cover no-repeat fixed;
+}
+
+#banner h1 {
+  font-family: 'Diplomata', cursive!important;
+  color: #59f8e8;
+  text-shadow: 6px 6px 15px #020e11;
+}
+
+#banner p.lead {
+  color:  #f9fafb!important;
+  text-shadow: 6px 6px 10px #020e11;
+}
+
+#banner p.text-muted {
+  color:  #020e11!important;
+  text-shadow: 3px 3px 15px #941c2f;
+  font-size: 1.3em!important;
+}
+
+#banner .fab {
+  color:  #020e11;
+  cursor: pointer;
+}
+/*servises*/
+#servises {
+  background: url(../img/bg-section.jpeg)center/cover no-repeat fixed;
+}
+
+#servises .circle-icon {
+  border: 3px solid  #f9fafb;
+  border-radius: 50px;
+  width: 100px;
+}
+
+#servises .fas {
+  color: #f9fafb;
+}
+
+#servises h2 {
+  color: #adddfa;
+  font-family: 'Diplomata', cursive!important;
+  text-shadow: 2px 2px 4px #941c2f;
+}
+
+#servises p {
+  width: 100%;
+  color:  #f9fafb;
+  background: linear-gradient(to left, rgba(148, 28, 47, .2),rgba(173, 221, 250, .2)),transparent;
+  border: 2px solid #adddfa;
+  border-radius: .5em;
+}
+/*projects*/
+#projects {
+  background: #020e11;
+}
+
+#projects h3 {
+  font-family: 'Diplomata', cursive!important;
+  color:  #adddfa;
+  text-shadow: 4px 4px 8px #941c2f;
+}
+
+#projects .col-md-4 {
+  padding: 0!important;
+  margin: 0!important;
+}
+
+#projects article {
+  overflow: hidden;
+}
+
+#projects article img {
+  transition: all 1.5s ease;
+  opacity: .6;
+}
+
+
+#projects article img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/*carousel*/
+.carousel {
+  background: #020e11;
+}
+
+/*reset standard styles*/
+.carousel-control-prev,
+.carousel-control-prev:hover {
+  filter: none;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.carousel-control-next,
+.carousel-control-next:hover {
+  filter: none;
+  opacity: 1;
+  text-shadow: none;
+}
+/*end reset standard styles*/
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+  background-color: rgba(89, 248, 232, .5);
+  font-size: 1em;
+  height: 2em;
+  line-height: 2em;
+  margin-top: -2em;
+  width: 2em;
+  border: 1px solid #020e11;
+  border-radius: .2em;
+  transition: all 1.2s ease;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+  left: .8em;
+  margin-left: 0;
+}
+
+.carousel-control-next .carousel-control-next-icon{
+  right: .8em;
+  margin-right: 0;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(148, 28, 47, .8);
+}
+/*about section*/
+#about {
+ /* min-height: 100vh;*/
+  background: url(../img/item-6.jpeg) center/cover no-repeat fixed;
+}
+
+#about .container {
+ /* height: 80vh;*/
+}
+
+#about h4 {
+  font-family: 'Diplomata', cursive!important;
+  color:  #020e11;
+  text-shadow: 4px 4px 8px #59f8e8;
+  background: linear-gradient(to left, rgba(148, 28, 47, .5),rgba(173, 221, 250, .5)),transparent;
+}
+
+#about .card-body {
+  background: linear-gradient(to top,rgba(173, 221, 250, .3),rgba(89, 248, 232, .8)),transparent!important;
+  border: 2px solid #adddfa;
+  border-radius: .5em;
+}
+
+#about h5 {
+  font-size: 1.6em!important;
+}
+
+#about p {
+  color:  #020e11!important;
+}
+
+.btn {
+  color:   #adddfa;
+  background: #020e11;
+  border: 2px solid  #adddfa;
+  transition: all .5s linear;
+}
+
+.btn:hover {
+  color:  #020e11;
+  background: #adddfa;
+  border: 2px solid #020e11;
+}
+/*filler*/
+.filler{
+  min-height: 50vh;
+  background: url(../img/item-3.jpeg)center/cover no-repeat fixed;
+}
+/*end filler*/
+/*book*/
+#book a {
+  font-family: 'Diplomata', cursive;
+}
+/*contact*/
+#contact {
+  background: linear-gradient(to top,rgba(173, 221, 250, .3),rgba(89, 248, 232, .8)), 
+  url(../img/item-6.jpeg) center/cover no-repeat fixed;
+}
+
+#contact h4 {
+  font-family: 'Diplomata', cursive!important;
+  color:  #020e11;
+  text-shadow: 4px 4px 8px #941c2f;
+}
+
+#contact form {
+  background: linear-gradient(to bottom, rgba(148, 28, 47, .5),rgba(173, 221, 250, .5)),transparent;
+  border: 2px solid #adddfa;
+  border-radius: .5em;
+  font-size: 1.2em!important;
+}
+
+#contact form:hover {
+  background: linear-gradient(to top, rgba(148, 28, 47, .5),rgba(173, 221, 250, .5));
+  border: 2px solid #59f8e8;
+}
+
+#contact .form-text {
+  color: #020e11!important;
+}
+
+#contact label,
+#contact small, 
+#contact::placeholder {
+  font-family: 'Cabin', sans-serif!important;
+}
+/*footer*/
+footer {
+  background: #020e11;
+}
+
+footer .fab {
+  color: #adddfa;
+  transition: cubic-bezier(0.6, -0.41, 0.01, 1), all 2s;
+}
+
+footer .fab:hover {
+  opacity: .3;
+}
+
+footer h6 {
+  color: #f9fafb;
+}
+
+@media (min-width: 768px) {
+  .carousel-control-prev .carousel-control-prev-icon,
+  .carousel-control-next .carousel-control-next-icon {
+    font-size: 1.3em;
+    height: 3em;
+    line-height: 3em;  
+    margin-top: -2em;
+    width: 3em;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  nav ul.navbar-nav {
+    background: rgba(2, 14, 17, .8)!important;
+  }
+  
+   nav a.nav-link:hover {
+    color: #59f8e8!important;
+    transition: all 2s ease;
+    background: rgba(148, 28, 47, .8);
+    padding-left: 2em!important;
+    text-shadow: 3px 3px 15px  #020e11;
+  }
+
+   #servises h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  #banner h1 {
+    font-size: 3.2em;
+  }
+
+  #projects h3 {
+    font-size: 1.4em!important;
+  }
+
+  #about h4 {
+    font-size: 1.2em!important;
+  }
+
+   #contact h4 {
+    font-size: 1.2em!important;
+  }
+
+  #book a {
+    font-size: .8em!important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  #about {
+    min-height: 150vh;
+  }
+}
